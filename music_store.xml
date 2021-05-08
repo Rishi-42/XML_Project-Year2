@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="music_store.css"?>
+<!DOCTYPE music_store SYSTEM "music_store.dtd">
+<music_store xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="music_store.xsd">
+    <store_name>Vevo</store_name>
+    <address>
+        <city>New York</city>
+        <country>USA</country>
+    </address>
+    <phone_number>014234000</phone_number>
+    <url>www.vevo.com</url>
+    <about>Vevo is the world’s leading all-premium music video and entertainment platform with over 21 billion monthly views globally. Vevo delivers a personalized and expertly curated experience for audiences to explore and discover music videos exclusive original programming and live performances from the artists they love on mobile web and connected TV.</about>
+    <logo></logo>
+    <songs>
+        <song label="EMI" songID="SI_101">
+            <genres_name genresID="GID_11">Pop</genres_name>
+            <song_name>Beautiful Mistakes</song_name>
+            <song_description>Description of the song, what the song is all about.</song_description>
+            <director>Sophie Muller</director>
+            <producers>
+                <producer>Andrew Goldstein</producer>
+                <producer>Black bear</producer>
+            </producers>
+            <writers>
+                <writer>Adam Levine</writer>
+                <writer>Jacob</writer>
+            </writers>
+            <Artists>
+                <Artist type="Vocalist">Maroon 5</Artist>
+                <Artist type="Feat">Wiz Khalifa</Artist>
+                <Artist type="Musician">Lamar</Artist>
+                <Artist type="Musician">Cardi B</Artist>
+            </Artists>
+            <released_date>2021-12-03</released_date>
+            <rates>
+                <rate platformID="pi_yt101">9/10</rate>
+            </rates>
+            <length>3:49</length>
+            <link platform="youtube">https://youtu.be/BSzSn-PRdtI</link>
+        </song>
+
+        <song label="Sony" songID="SI_102">
+            <genres_name genresID="GID_12">Pop</genres_name>
+            <song_name>Streets</song_name>
+            <song_description>Description of the song, what the song is all about.</song_description>
+            <director>Christian Bresluer</director>
+            <album>Hot Pink</album>
+            <producers>
+                <producer>Blag Tuxedo</producer>
+            </producers>
+            <content_partner>InnerCat Music Group</content_partner>
+            <writers>
+                <writer>Doja Cat</writer>
+                <writer>David Sprecher</writer>
+                <writer>Lydia Asrat</writer>
+            </writers>
+            <Artists>
+                <Artist type="Vocalist">Doja Cat's</Artist>
+                <Artist type="Feat">Nana Kofo</Artist>
+            </Artists>
+            <released_date>2021-03-09</released_date>
+            <rates>
+                <rate platformID="pi_yt110">8/10</rate>
+                <rate platformID="pi_sp110">9/10</rate>
+            </rates>
+            <length>4:33</length>
+        </song>
+        <song label="UMG" songID="SI_103">
+            <genres_name genresID="GID_13">Pop</genres_name>
+            <song_name>Spaceman</song_name>
+            <song_description>Description of the song, what the song is all about.</song_description>
+            <director>Anthony Mandler</director>
+            <producers>
+                <producer>Kurstin</producer>
+            </producers>
+            <writers>
+                <writer>Greg Kurstin</writer>
+                <writer>Nicholas Jonas</writer>
+            </writers>
+            <Artists>
+                <Artist type="Vocalist">Nick Jona</Artist>
+            </Artists>
+            <released_date>2021-03-12</released_date>
+            <rates>
+                <rate platformID="pi_yt109">8/10</rate>
+                <rate platformID="pi_sp109">6/10</rate>
+            </rates>
+            <length>4:16</length>
+            <link platform="spotify">https://youtu.be/V3cF_AuwZIc</link>
+        </song>
+        <song label="Sony" songID="SI_104">
+            <genres_name genresID="GID_14">Pop</genres_name>
+            <song_name>Angles like you</song_name>
+            <song_description>Description of the song, what the song is all about.</song_description>
+            <director>Alana O' Herlihy</director>
+            <album>Plastic Hearts</album>
+            <producers>
+                <producer>Louis Bell</producer>
+                <producer>Andrew Watt</producer>
+            </producers>
+            <writers>
+                <writer>llsey Juber</writer>
+                <writer>Ali Tampasi</writer>
+            </writers>
+            <Artists>
+                <Artist type="Vocalist">Miley Cyrus</Artist>
+            </Artists>
+            <released_date>2021-03-08</released_date>
+            <rates>
+                <rate platformID="pi_yt108">9/10</rate>
+                <rate platformID="pi_sp108">7/10</rate>
+            </rates>
+            <length>4:06</length>
+            <link platform="youtube">https://youtu.be/Y0ORhLyJWuc</link>
+        </song>
+        <song label="UMG" songID="SI_105">
+            <genres_name genresID="GID_15">Country</genres_name>
+            <song_name>Neon Church</song_name>
+            <song_description>Description of the song, what the song is all about.</song_description>
+            <album>Here on Earth</album>
+            <producers>
+                <producer>Byron Gallimore</producer>
+            </producers>
+            <writers>
+                <writer>Ben Goldsmith</writer>
+                <writer>Ben Stennia</writer>
+                <writer>Rose Ellislipsey</writer>
+            </writers>
+            <Artists>
+                <Artist type="Vocalist">Tim Mc Graw</Artist>
+            </Artists>
+            <released_date>2021-04-16</released_date>
+            <rates>
+                <rate platformID="pi_yt107">9/10</rate>
+                <rate platformID="pi_sp107">9/10</rate>
+            </rates>
+            <length>3:33</length>
+            <link platform="youtube">https://youtu.be/1GEkRf8YmrE</link>
+        </song>
+        <song label="EMI" songID="SI_106">
+            <genres_name genresID="GID_16">Country</genres_name>
+            <song_name>Good Time</song_name>
+            <producers>
+                <producer>Joshua Murty</producer>
+            </producers>
+            <content_partner>Ditto Music</content_partner>
+            <writers>
+                <writer>Niko Moon</writer>
+                <writer>Anna Moon</writer>
+                <writer>Mark Trussell</writer>
+            </writers>
+            <Artists>
+                <Artist type="Vocalist">Niko Moon</Artist>
+            </Artists>
+            <released_date>2020-03-16</released_date>
+            <rates>
+                <rate platformID="pi_yt106">8/10</rate>
+                <rate platformID="pi_sp106">10/10</rate>
+            </rates>
+            <length>3:35</length>
+            <link platform="youtube">https://youtu.be/H7HmzwI67ec</link>
+        </song>
+        <song label="Sony" songID="SI_107">
+            <genres_name genresID="GID_17">Country</genres_name>
+            <song_name>Getting Over Him</song_name>
+            <song_description>Description of the song, what the song is all about.</song_description>
+            <director>Stephen Kinigopoulos</director>
+            <producers>
+                <producer>Paul Digiovanni</producer>
+            </producers>
+            <writers>
+                <writer>Lauren Alaina</writer>
+                <writer>Emily Weisband</writer>
+            </writers>
+            <Artists>
+                <Artist type="Vocalist">Lauren Alaina</Artist>
+                <Artist type="Feat">Jon Pardi</Artist>
+            </Artists>
+            <released_date>2021-02-22</released_date>
+            <rates>
+                <rate platformID="pi_yt105">9/10</rate>
+            </rates>
+            <link platform="youtube">https://youtu.be/k_cfSjLTvhs</link>
+        </song>
+        <song label="UMG" songID="SI_108">
+            <genres_name genresID="GID_18">Country</genres_name>
+            <song_name>Old Town Road</song_name>
+            <song_description>Description of the song, what the song is all about.</song_description>
+            <director>Calmatic</director>
+            <producers>
+                <producer>Young Kio</producer>
+                <producer>Trent Reznor</producer>
+                <producer>Atticus Ross</producer>
+            </producers>
+            <writers>
+                <writer>Montero Hill</writer>
+                <writer>Trent Reznor</writer>
+            </writers>
+            <Artists>
+                <Artist type="Vocalist">Lil Nas X</Artist>
+                <Artist type="Feat">Billy Ray Cyrus</Artist>
+            </Artists>
+            <released_date>2018-12-02</released_date>
+            <rates>
+                <rate platformID="pi_sp104">5/10</rate>
+            </rates>
+            <length>2:38</length>
+            <link platform="youtube">https://youtu.be/r7qovpFAGrQ</link>
+        </song>
+        <song label="EMI" songID="SI_109">
+            <genres_name genresID="GID_19">Rock</genres_name>
+            <song_name>Wind of Change</song_name>
+            <song_description>Description of the song, what the song is all about.</song_description>
+            <album>Crazy World</album>
+            <producers>
+                <producer>Keith Olsen</producer>
+            </producers>
+            <writers>
+                <writer>Klaus Meine</writer>
+            </writers>
+            <Artists>
+                <Artist type="Vocalist">Scrpions</Artist>
+            </Artists>
+            <released_date>1991-01-20</released_date>
+            <rates>
+                <rate platformID="pi_yt103">5/10</rate>
+                <rate platformID="pi_sp103">7/10</rate>
+            </rates>
+            <length>5:10</length>
+            <link platform="youtube">https://youtu.be/n4RjJKxsamQ</link>
+        </song>
+        <song label="UMG" songID="SI_110">
+            <genres_name genresID="GID_110">Rock</genres_name>
+            <song_name>Sweet child O' Mine</song_name>
+            <song_description>Description of the song, what the song is all about.</song_description>
+            <album>Appetite for Destruction</album>
+            <producers>
+                <producer>Mike Glink</producer>
+            </producers>
+            <writers>
+                <writer>Guns N' Rose</writer>
+            </writers>
+            <Artists>
+                <Artist type="Vocalist">Guns N' Rose</Artist>
+            </Artists>
+            <released_date>1988-06-21</released_date>
+            <rates>
+                <rate platformID="pi_yt102">9/10</rate>
+                <rate platformID="pi_sp102">8/10</rate>
+            </rates>
+            <length>5:02</length>
+            <link platform="youtube">https://youtu.be/1w7OgIMMRc4</link>
+        </song>
+        <song label="UMG" songID="SI_111">
+            <genres_name genresID="GID_111">Rock</genres_name>
+            <song_name>Bohemian Rhapsody(Remastered 2011)</song_name>
+            <song_description>Description of the song, what the song is all about.</song_description>
+            <producers>
+                <producer>Roy Thomas Baker</producer>
+            </producers>
+            <writers>
+                <writer>Freddi Mercury</writer>
+            </writers>
+            <Artists>
+                <Artist type="Vocalist">Queens</Artist>
+            </Artists>
+            <released_date>1975-10-31</released_date>
+            <rates>
+                <rate platformID="pi_yt101">3/10</rate>
+            </rates>
+            <length>5:55</length>
+            <link platform="youtube">https://youtu.be/fJ9rUzIMcZQ</link>
+        </song>
+    </songs>
+</music_store>

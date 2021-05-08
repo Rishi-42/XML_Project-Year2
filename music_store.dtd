@@ -1,0 +1,33 @@
+<!ELEMENT music_store (store_name,address,phone_number,url,about,logo,songs)>
+<!ELEMENT store_name (#PCDATA)>
+<!ELEMENT address (city,country)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT phone_number (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT about (#PCDATA)>
+<!ELEMENT logo EMPTY>
+<!ELEMENT songs (song+)>
+<!ELEMENT song (genres_name,song_name,song_description?,director?,album?,producers,content_partner?,writers,Artists,released_date,rates,length?,link?)>
+<!ELEMENT genres_name (#PCDATA)>
+<!ELEMENT song_name (#PCDATA)>
+<!ELEMENT song_description (#PCDATA)>
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT album (#PCDATA)>
+<!ELEMENT producers (producer+)>
+<!ELEMENT content_partner (#PCDATA)>
+<!ELEMENT producer (#PCDATA)>
+<!ELEMENT writers (writer+)>
+<!ELEMENT writer (#PCDATA)>
+<!ELEMENT Artists (Artist+)>
+<!ELEMENT Artist (#PCDATA)>
+<!ELEMENT released_date (#PCDATA)>
+<!ELEMENT rates (rate+)>
+<!ELEMENT rate (#PCDATA)>
+<!ELEMENT length (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+<!ATTLIST song label (EMI|Sony|UMG) #IMPLIED songID CDATA #REQUIRED>
+<!ATTLIST genres_name genresID CDATA #REQUIRED>
+<!ATTLIST Artist type (Vocalist | Musician | Feat) #IMPLIED>
+<!ATTLIST rate platformID CDATA #REQUIRED>
+<!ATTLIST link platform CDATA #REQUIRED>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="music_store">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="store_name"/>
+                <xs:element ref="address"/>
+                <xs:element ref="phone_number"/>
+                <xs:element ref="url"/>
+                <xs:element ref="about"/>
+                <xs:element ref="logo"/>
+                <xs:element ref="songs"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="store_name" type="xs:string"/>
+    <xs:element name="address">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="city"/>
+                <xs:element ref="country"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="city" type="xs:string"/>
+    <xs:element name="country" type="xs:string"/>
+    <xs:element name="phone_number">
+    <xs:simpleType>
+        <xs:restriction base="xs:integer">
+            <xs:pattern value="[0-1]{2}[0-9]{7}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    </xs:element>
+    <xs:element name="url" type="xs:string"/>
+    <xs:element name="about" type="xs:string"/>
+    <xs:element name="logo"/>
+    <xs:element name="songs">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="song"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="song">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="genres_name"/>
+                <xs:element ref="song_name"/>
+                <xs:element minOccurs="0" ref="song_description"/>
+                <xs:element minOccurs="0" ref="director"/>
+                <xs:element minOccurs="0" ref="album"/>
+                <xs:element ref="producers"/>
+                <xs:element minOccurs="0" ref="content_partner"/>
+                <xs:element ref="writers"/>
+                <xs:element ref="Artists"/>
+                <xs:element ref="released_date"/>
+                <xs:element ref="rates"/>
+                <xs:element minOccurs="0" ref="length"/>
+                <xs:element minOccurs="0" ref="link"/>
+            </xs:sequence>
+            <xs:attribute name="label">
+                <xs:simpleType>
+                    <xs:restriction base="xs:token">
+                        <xs:enumeration value="EMI"/>
+                        <xs:enumeration value="Sony"/>
+                        <xs:enumeration value="UMG"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="songID"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="genres_name">
+        <xs:complexType mixed="true">    
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="genresID" type="xs:string"/>
+                </xs:extension>
+            </xs:simpleContent> 
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="song_name" type="xs:string"/>
+    <xs:element name="song_description" type="xs:string"/>
+    <xs:element name="director" type="xs:string"/>
+    <xs:element name="album" type="xs:string"/>
+    <xs:element name="producers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="4" ref="producer"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="producer" type="xs:string"/>
+    <xs:element name="content_partner" type="xs:string"/>
+    <xs:element name="writers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="4" ref="writer"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="writer" type="xs:string"/>
+    <xs:element name="Artists">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="4" ref="Artist"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Artist">
+        <xs:complexType mixed="true">
+            <xs:attribute name="type">
+                <xs:simpleType>
+                    <xs:restriction base="xs:token">
+                        <xs:enumeration value="Vocalist"/>
+                        <xs:enumeration value="Musician"/>
+                        <xs:enumeration value="Feat"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="released_date" type="xs:date"/>
+    <xs:element name="rates">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="2" ref="rate"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="rate">
+        <xs:complexType mixed="true">
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="platformID" type="xs:string"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="length" type="xs:string"/>
+    <xs:element name="link">
+        <xs:complexType mixed="true">
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="platform" type="xs:string"/>
+                </xs:extension>
+            </xs:simpleContent>           
+        </xs:complexType>
+    </xs:element>    
+</xs:schema>
